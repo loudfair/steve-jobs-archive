@@ -1,0 +1,555 @@
+{
+  "videos": [
+    {
+      "id": "stanford-2005",
+      "title": "Stanford Commencement Speech (2005)",
+      "youtube_id": "UF8uR6Z6KLc",
+      "category": "Speeches",
+      "description": "One of Jobs' most inspiring speeches where he shares three stories from his life. 'Stay Hungry. Stay Foolish.'",
+      "year": 2005,
+      "featured": true
+    },
+    {
+      "id": "iphone-intro-2007",
+      "title": "iPhone Introduction (2007)",
+      "youtube_id": "vN4U5FqrOdQ",
+      "category": "Product Launches",
+      "description": "The historic iPhone introduction at MacWorld 2007. 'Today, Apple is going to reinvent the phone.'",
+      "year": 2007,
+      "featured": true
+    },
+    {
+      "id": "lost-interview-1995",
+      "title": "The Lost Interview (1995)",
+      "youtube_id": "9m68auPIPRk",
+      "category": "Interviews",
+      "description": "In-depth interview covering early days, NeXT, Pixar, and his vision during the wilderness years.",
+      "year": 1995,
+      "featured": true
+    },
+    {
+      "id": "d5-gates-2007",
+      "title": "Steve Jobs and Bill Gates at D5 Conference",
+      "youtube_id": "wvhW8cp15tk",
+      "category": "Interviews",
+      "description": "Historic joint interview discussing rivalry, collaboration, and the future of technology.",
+      "year": 2007
+    },
+    {
+      "id": "d8-2010",
+      "title": "Steve Jobs at D8 Conference",
+      "youtube_id": "c6nKI2At944",
+      "category": "Interviews",
+      "description": "Discussing iPad, iPhone, Flash controversy, privacy, and the future of media.",
+      "year": 2010
+    },
+    {
+      "id": "d1-2003",
+      "title": "Steve Jobs at D1 Conference",
+      "youtube_id": "anUPqU7bXOI",
+      "category": "Interviews",
+      "description": "Jobs at the inaugural D conference discussing digital music and iPod.",
+      "year": 2003
+    },
+    {
+      "id": "d2-2004",
+      "title": "Steve Jobs at D2 Conference",
+      "youtube_id": "7PKXYc3KwQs",
+      "category": "Interviews",
+      "description": "Jobs at the D2 All Things Digital conference discussing iPod and iTunes.",
+      "year": 2004
+    },
+    {
+      "id": "d3-2005",
+      "title": "Steve Jobs at D3 Conference",
+      "youtube_id": "IzH54FpWAP0",
+      "category": "Interviews",
+      "description": "Jobs at the D3 conference discussing Apple's transition to Intel processors.",
+      "year": 2005
+    },
+    {
+      "id": "interview-1981",
+      "title": "Steve Jobs Interview (1981)",
+      "youtube_id": "DbfejwP1d3c",
+      "category": "Early Career",
+      "description": "An early interview discussing Apple, computers, video games, and the future.",
+      "year": 1981
+    },
+    {
+      "id": "rare-1980",
+      "title": "Rare Footage: Presentation (1980)",
+      "youtube_id": "AgD3a4uIwaE",
+      "category": "Rare Footage",
+      "description": "Rare early footage of Jobs presenting in 1980.",
+      "year": 1980
+    },
+    {
+      "id": "interview-1980-ireland",
+      "title": "Steve Jobs Interview - Ireland (1980)",
+      "youtube_id": "7FnQ1WR52sc",
+      "category": "Early Career",
+      "description": "Vintage interview with Steve Jobs about Apple's early operations in Ireland.",
+      "year": 1980
+    },
+    {
+      "id": "fresh-air-1996",
+      "title": "The Fresh Air Interview (1996)",
+      "youtube_id": "MqSfFcaluHc",
+      "category": "Interviews",
+      "description": "Discussing NeXT, Pixar, Toy Story, and the future of technology.",
+      "year": 1996
+    },
+    {
+      "id": "interview-1991",
+      "title": "Steve Jobs Interview (1991)",
+      "youtube_id": "OzZB5pZTslE",
+      "category": "Interviews",
+      "description": "Reflecting on 10 years of the personal computer during his time at NeXT.",
+      "year": 1991
+    },
+    {
+      "id": "wgbh-1990",
+      "title": "WGBH Interview (1990)",
+      "youtube_id": "rbB0RXYiKJA",
+      "category": "Interviews",
+      "description": "50-minute interview from 'The Machine That Changed The World' series discussing Jobs' vision at NeXT.",
+      "year": 1990
+    },
+    {
+      "id": "cnn-web-1995",
+      "title": "CNN Interview: The Web (1995)",
+      "youtube_id": "3nKXw2CSEjs",
+      "category": "Interviews",
+      "description": "Jobs on CNN's Moneyline discussing the internet and webpages during his time at NeXT.",
+      "year": 1995
+    },
+    {
+      "id": "secrets-of-life-1994",
+      "title": "Secrets Of Life (1994)",
+      "youtube_id": "kYfNvmF0Bqw",
+      "category": "Philosophy",
+      "description": "Restored excerpt discussing his philosophy on life with the Santa Clara Valley Historical Association.",
+      "year": 1994
+    },
+    {
+      "id": "ipod-intro-2001",
+      "title": "iPod Introduction (2001)",
+      "youtube_id": "kN0SVBCJqLs",
+      "category": "Product Launches",
+      "description": "Steve Jobs introduces the original iPod, revolutionizing the music industry.",
+      "year": 2001
+    },
+    {
+      "id": "ipad-intro-2010",
+      "title": "iPad Introduction (2010)",
+      "youtube_id": "OBhYxj2SvRI",
+      "category": "Product Launches",
+      "description": "The historic introduction of the original iPad, defining a new product category.",
+      "year": 2010
+    },
+    {
+      "id": "macbook-air-2008",
+      "title": "MacBook Air Introduction (2008)",
+      "youtube_id": "0BHPtoTctDY",
+      "category": "Product Launches",
+      "description": "Jobs pulling the MacBook Air from an envelope in one of his most iconic moments.",
+      "year": 2008
+    },
+    {
+      "id": "iphone4-2010",
+      "title": "iPhone 4 Introduction (2010)",
+      "youtube_id": "z__jxoczNWc",
+      "category": "Product Launches",
+      "description": "Jobs presenting the iPhone 4 with its revolutionary design and Retina display.",
+      "year": 2010
+    },
+    {
+      "id": "icloud-2011",
+      "title": "iCloud Introduction (2011)",
+      "youtube_id": "3laMUGVBxII",
+      "category": "Product Launches",
+      "description": "Jobs' last major product introduction, presenting Apple's cloud services strategy.",
+      "year": 2011
+    },
+    {
+      "id": "wwdc-1997",
+      "title": "WWDC 1997",
+      "youtube_id": "6iACK-LNnzM",
+      "category": "Keynotes",
+      "description": "Jobs' first WWDC appearance after returning to Apple, outlining his strategy.",
+      "year": 1997
+    },
+    {
+      "id": "wwdc-2008",
+      "title": "WWDC 2008",
+      "youtube_id": "Nx7v815bYUw",
+      "category": "Keynotes",
+      "description": "Jobs introducing iPhone 3G and the App Store at WWDC 2008.",
+      "year": 2008
+    },
+    {
+      "id": "wwdc-2010",
+      "title": "WWDC 2010",
+      "youtube_id": "z__jxoczNWc",
+      "category": "Keynotes",
+      "description": "Jobs introducing iPhone 4 and FaceTime at WWDC 2010.",
+      "year": 2010
+    },
+    {
+      "id": "macworld-1998",
+      "title": "Macworld 1998",
+      "youtube_id": "gdYA6Y-NOMw",
+      "category": "Keynotes",
+      "description": "Jobs discussing Apple's turnaround strategy at Macworld 1998.",
+      "year": 1998
+    },
+    {
+      "id": "insult-response-1997",
+      "title": "Insult Response (1997)",
+      "youtube_id": "3DV9MZzxSsQ",
+      "category": "Q&A Sessions",
+      "description": "Jobs responding to an audience member's insult with remarkable composure.",
+      "year": 1997
+    },
+    {
+      "id": "think-different-1997",
+      "title": "Think Different Campaign (1997)",
+      "youtube_id": "keCwRdbwNQY",
+      "category": "Marketing",
+      "description": "Jobs narrating the famous 'Think Different' campaign that relaunched Apple's brand.",
+      "year": 1997
+    },
+    {
+      "id": "microsoft-partnership-1997",
+      "title": "Microsoft Partnership Announcement (1997)",
+      "youtube_id": "PEHNrqPkefI",
+      "category": "Keynotes",
+      "description": "Jobs announcing the Microsoft partnership that helped save Apple.",
+      "year": 1997
+    },
+    {
+      "id": "paul-rand-1993",
+      "title": "Paul Rand and NeXT Logo (1993)",
+      "youtube_id": "xb8idEf-Iak",
+      "category": "Design",
+      "description": "Jobs discussing working with legendary designer Paul Rand on the NeXT logo.",
+      "year": 1993
+    },
+    {
+      "id": "pixar-animation-1995",
+      "title": "The Future of Animation (1995)",
+      "youtube_id": "aqc5VLk5BHg",
+      "category": "Pixar",
+      "description": "Rare video of Jobs discussing the future of computer animation at Pixar.",
+      "year": 1995
+    },
+    {
+      "id": "pixar-lasseter-1996",
+      "title": "Jobs and Lasseter on Pixar (1996)",
+      "youtube_id": "JfIgzSoTMOs",
+      "category": "Pixar",
+      "description": "Jobs and Pixar's creative director discussing the animation studio's work.",
+      "year": 1996
+    },
+    {
+      "id": "customer-backwards-1997",
+      "title": "Start With Your Customer (1997)",
+      "youtube_id": "PT-nBQYL0NA",
+      "category": "Business Philosophy",
+      "description": "Jobs explaining his customer-centric approach to product development.",
+      "year": 1997
+    },
+    {
+      "id": "juran-quality-1991",
+      "title": "Joseph Juran and Quality (1991)",
+      "youtube_id": "XbkMcvnNq3g",
+      "category": "Business Philosophy",
+      "description": "Jobs discusses quality management principles and his admiration for Joseph Juran.",
+      "year": 1991
+    },
+    {
+      "id": "starting-business-1995",
+      "title": "On Starting A Business (1995)",
+      "youtube_id": "KuNQgln6TL0",
+      "category": "Entrepreneurship",
+      "description": "Jobs sharing advice on entrepreneurship and starting a business.",
+      "year": 1995
+    },
+    {
+      "id": "cause-1998",
+      "title": "CAUSE Conference (1998)",
+      "youtube_id": "Gk-9Fd2mEnI",
+      "category": "Speeches",
+      "description": "Jobs speaking about technology in education at the CAUSE conference.",
+      "year": 1998
+    },
+    {
+      "id": "ny-apple-store-2006",
+      "title": "NY Apple Store Interview (2006)",
+      "youtube_id": "AJeJjXJYmKo",
+      "category": "Interviews",
+      "description": "NBC interview with Jobs at the opening of the iconic NY Apple Store.",
+      "year": 2006
+    },
+    {
+      "id": "cnbc-2007",
+      "title": "CNBC Interview (2007)",
+      "youtube_id": "rWRbTnE1PEM",
+      "category": "Interviews",
+      "description": "CNBC interview discussing Apple's business strategy and future.",
+      "year": 2007
+    },
+    {
+      "id": "next-openstep-1997",
+      "title": "NeXT, OpenStep and Apple Return",
+      "youtube_id": "NlL5JlYt_tg",
+      "category": "Documentaries",
+      "description": "Documentary about NeXT and how its technology led to Jobs' return to Apple.",
+      "year": 1997
+    },
+    {
+      "id": "commitment-1997",
+      "title": "Defending His Commitment (1997)",
+      "youtube_id": "3LEXae1j6EY",
+      "category": "Interviews",
+      "description": "Jobs defends his return to Apple and his vision for turning the company around.",
+      "year": 1997
+    },
+    {
+      "id": "prank-starbucks-2007",
+      "title": "Prank Calling Starbucks (2007)",
+      "youtube_id": "gHZzb42s3y4",
+      "category": "Humorous",
+      "description": "Jobs showing his love for pranks in one of his Apple Keynote addresses.",
+      "year": 2007
+    },
+    {
+      "id": "innovative-speech-2004",
+      "title": "Most Innovative Speech (2004)",
+      "youtube_id": "5WBX6SACViI",
+      "category": "Speeches",
+      "description": "Jobs discussing innovation and his approach to creating revolutionary products.",
+      "year": 2004
+    },
+    {
+      "id": "tv-jammer-1995",
+      "title": "The TV Jammer Story (1995)",
+      "youtube_id": "yvOm2vHr33Y",
+      "category": "Early Career",
+      "description": "Jobs talks about the 'TV Jammer' device built by Woz and the practical jokes they played with it.",
+      "year": 1995
+    },
+    {
+      "id": "blue-box-1995",
+      "title": "Blue Box Story (1995)",
+      "youtube_id": "HFURM8O-oYI",
+      "category": "Early Career",
+      "description": "Jobs talks about himself and Woz building a 'blue box' device that made free long-distance calls possible.",
+      "year": 1995
+    }
+  ],
+  "quotes": [
+    {
+      "id": "crazy-ones",
+      "quote": "Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.",
+      "source": "Think Different Campaign, 1997",
+      "year": 1997,
+      "featured": true
+    },
+    {
+      "id": "stay-hungry",
+      "quote": "Stay hungry. Stay foolish.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005,
+      "featured": true
+    },
+    {
+      "id": "design-works",
+      "quote": "Design is not just what it looks like and feels like. Design is how it works.",
+      "source": "The New York Times, 2003",
+      "year": 2003,
+      "featured": true
+    },
+    {
+      "id": "innovation-leader",
+      "quote": "Innovation distinguishes between a leader and a follower.",
+      "source": "The Innovation Secrets of Steve Jobs",
+      "year": 2001
+    },
+    {
+      "id": "time-limited",
+      "quote": "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of other's opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005
+    },
+    {
+      "id": "death-reminder",
+      "quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005
+    },
+    {
+      "id": "connect-dots",
+      "quote": "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005
+    },
+    {
+      "id": "love-work",
+      "quote": "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005
+    },
+    {
+      "id": "simple-complex",
+      "quote": "Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.",
+      "source": "BusinessWeek Interview, 1998",
+      "year": 1998
+    },
+    {
+      "id": "burning-idea",
+      "quote": "You have to be burning with an idea, or a problem, or a wrong that you want to right. If you're not passionate enough from the start, you'll never stick it out.",
+      "source": "Interview",
+      "year": 2008
+    },
+    {
+      "id": "focus-saying-no",
+      "quote": "People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.",
+      "source": "WWDC 1997",
+      "year": 1997
+    },
+    {
+      "id": "creativity-connecting",
+      "quote": "Creativity is just connecting things.",
+      "source": "Wired Magazine, 1996",
+      "year": 1996
+    },
+    {
+      "id": "pirate",
+      "quote": "Why join the navy if you can be a pirate?",
+      "source": "Macintosh Development Team",
+      "year": 1983
+    },
+    {
+      "id": "details-matter",
+      "quote": "Details matter, it's worth waiting to get it right.",
+      "source": "Fortune Magazine",
+      "year": 2008
+    },
+    {
+      "id": "journey-reward",
+      "quote": "The journey is the reward.",
+      "source": "Becoming Steve Jobs",
+      "year": 1985
+    },
+    {
+      "id": "mirror-morning",
+      "quote": "I have looked in the mirror every morning and asked myself: 'If today were the last day of my life, would I want to do what I am about to do today?' And whenever the answer has been 'No' for too many days in a row, I know I need to change something.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005
+    },
+    {
+      "id": "beginner-again",
+      "quote": "The heaviness of being successful was replaced by the lightness of being a beginner again.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005
+    },
+    {
+      "id": "something-wonderful",
+      "quote": "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful... that's what matters to me.",
+      "source": "The Wall Street Journal, 1993",
+      "year": 1993
+    },
+    {
+      "id": "brick-head",
+      "quote": "Sometimes life's going to hit you in the head with a brick. Don't lose faith. I'm convinced that the only thing that kept me going was that I loved what I did.",
+      "source": "Stanford Commencement Speech, 2005",
+      "year": 2005
+    },
+    {
+      "id": "think-different",
+      "quote": "Think Different.",
+      "source": "Apple Slogan, 1997",
+      "year": 1997
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1955,
+      "title": "Birth",
+      "description": "Steve Paul Jobs is born on February 24 in San Francisco, California, and adopted by Paul and Clara Jobs."
+    },
+    {
+      "year": 1976,
+      "title": "Apple Founded",
+      "description": "Co-founds Apple Computer with Steve Wozniak in the Jobs family garage, launching the Apple I."
+    },
+    {
+      "year": 1977,
+      "title": "Apple II",
+      "description": "Apple II is released, becoming one of the first successful mass-produced personal computers."
+    },
+    {
+      "year": 1984,
+      "title": "Macintosh",
+      "description": "Introduces the Macintosh, featuring a revolutionary graphical user interface."
+    },
+    {
+      "year": 1985,
+      "title": "Leaves Apple",
+      "description": "After a power struggle with the board, Jobs leaves Apple and founds NeXT Computer."
+    },
+    {
+      "year": 1986,
+      "title": "Acquires Pixar",
+      "description": "Purchases The Graphics Group from Lucasfilm, later renamed Pixar Animation Studios."
+    },
+    {
+      "year": 1995,
+      "title": "Toy Story",
+      "description": "Pixar releases Toy Story, the world's first fully computer-animated feature film."
+    },
+    {
+      "year": 1997,
+      "title": "Returns to Apple",
+      "description": "Apple acquires NeXT and Jobs returns as interim CEO, beginning Apple's turnaround."
+    },
+    {
+      "year": 2001,
+      "title": "iPod",
+      "description": "Introduces the iPod, revolutionizing the music industry with '1,000 songs in your pocket.'"
+    },
+    {
+      "year": 2007,
+      "title": "iPhone",
+      "description": "Unveils the iPhone, reinventing the mobile phone and creating the smartphone era."
+    },
+    {
+      "year": 2010,
+      "title": "iPad",
+      "description": "Introduces the iPad, defining the tablet computing category."
+    },
+    {
+      "year": 2011,
+      "title": "Legacy",
+      "description": "Steve Jobs passes away on October 5, leaving behind a legacy of innovation that changed the world."
+    }
+  ],
+  "categories": [
+    "Interviews",
+    "Speeches",
+    "Product Launches",
+    "Keynotes",
+    "Early Career",
+    "Rare Footage",
+    "Business Philosophy",
+    "Design",
+    "Pixar",
+    "Documentaries",
+    "Q&A Sessions",
+    "Marketing",
+    "Entrepreneurship",
+    "Humorous",
+    "Philosophy"
+  ]
+}

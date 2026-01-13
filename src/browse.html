@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse the complete Steve Jobs archive. Filter by interviews, speeches, keynotes, product launches, and more.">
+    <meta name="theme-color" content="#000000">
+    <title>Browse Archive - Steve Jobs Archive</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127822;</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#timeline" class="nav-link">Timeline</a>
+            <a href="index.html#featured" class="nav-link">Featured</a>
+            <a href="quotes.html" class="nav-link">Quotes</a>
+            <a href="browse.html" class="nav-link active">Browse All</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Browse Section -->
+        <section class="section" style="padding-top: calc(var(--header-height) + var(--space-3xl));">
+            <div class="container">
+                <div class="section-header">
+                    <h1>The Archive</h1>
+                    <p>Explore interviews, speeches, keynotes, and rare footage from Steve Jobs' career spanning three decades.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-bar" id="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Interviews">Interviews</button>
+                    <button class="filter-btn" data-filter="Speeches">Speeches</button>
+                    <button class="filter-btn" data-filter="Product Launches">Launches</button>
+                    <button class="filter-btn" data-filter="Keynotes">Keynotes</button>
+                    <button class="filter-btn" data-filter="Early Career">Early Career</button>
+                    <button class="filter-btn" data-filter="Rare Footage">Rare</button>
+                    <select class="sort-select" id="sort-select">
+                        <option value="date-desc">Newest First</option>
+                        <option value="date-asc">Oldest First</option>
+                        <option value="title-asc">A-Z</option>
+                    </select>
+                </div>
+
+                <!-- Results Count -->
+                <p id="results-count" style="text-align: center; margin-bottom: var(--space-xl); color: var(--color-text-tertiary);"></p>
+
+                <!-- Video Grid -->
+                <div class="grid grid-3" id="video-grid">
+                    <div class="loading">Loading archive...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Content sourced from public archives. Not affiliated with Apple Inc.</p>
+        <p>Built with appreciation for a life that inspired millions.</p>
+    </footer>
+
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/main.js"></script>
+    <script src="js/browse.js"></script>
+</body>
+</html>
