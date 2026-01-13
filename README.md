@@ -1,279 +1,268 @@
 # Steve Jobs Archive
 
-A curated archive dedicated to the life, work, and wisdom of Steve Jobs. This static website features interviews, speeches, keynotes, product launches, and timeless quotes spanning three decades of innovation.
+A curated digital archive of Steve Jobs' interviews, speeches, product launches, and quotes. Built with an Apple-inspired dark theme.
 
-## Overview
+## Live Production
 
-This project consolidates content from multiple sources into a single, beautifully designed archive featuring an Apple-inspired dark theme. The website is built with modern web technologies and requires no backend - simply open `index.html` in a browser or deploy to any static hosting service.
+| Resource                 | URL                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------ |
+| **Live Site**            | https://www.myeye.cloud                                                                    |
+| **Cloudflare Pages**     | https://steve-jobs-archive.pages.dev                                                       |
+| **GitHub**               | https://github.com/loudfair/steve-jobs-archive                                             |
+| **Cloudflare Dashboard** | https://dash.cloudflare.com/cd63df5d51174dd5a46564c13212c832/pages/view/steve-jobs-archive |
 
-### Key Features
+## Quick Reference for AI Agents
 
-- **40+ Videos**: Interviews, keynotes, product launches, and rare footage (1980-2011)
-- **20+ Quotes**: Curated wisdom on life, creativity, and innovation
-- **Interactive Timeline**: Key moments from Steve Jobs' remarkable life
-- **Category Filtering**: Browse by Interviews, Speeches, Product Launches, Keynotes, and more
-- **Responsive Design**: Optimised for desktop, tablet, and mobile
-- **YouTube Integration**: Embedded video playback with fallback support
+### Content Location
 
-## Architecture
+**ALL CONTENT IS IN ONE FILE:** `src/data/content_database.json`
 
-```mermaid
-flowchart TB
-    subgraph Client["Browser"]
-        HTML[HTML Pages]
-        CSS[CSS Styles]
-        JS[JavaScript]
-    end
+- 77 quotes
+- 43 videos (YouTube IDs)
+- 12 timeline events
+- 15 categories
 
-    subgraph Content["Content Layer"]
-        JSON[(content_database.json)]
-    end
+### Deployment
 
-    subgraph External["External Services"]
-        YT[YouTube API]
-        IMG[YouTube Thumbnails]
-    end
+**Auto-deploy enabled** - Push to `main` branch triggers Cloudflare Pages deployment.
 
-    HTML --> CSS
-    HTML --> JS
-    JS --> JSON
-    JS --> YT
-    JS --> IMG
+```bash
+git add -A && git commit -m "message" && git push
 ```
 
-### Data Flow
+### Key Files
 
-```mermaid
-sequenceDiagram
-    participant U as User
-    participant B as Browser
-    participant J as JavaScript
-    participant D as JSON Database
-    participant Y as YouTube
+| File                             | Purpose                           |
+| -------------------------------- | --------------------------------- |
+| `src/data/content_database.json` | ALL quotes, videos, timeline data |
+| `src/css/styles.css`             | Apple dark theme (~750 lines)     |
+| `src/index.html`                 | Home page                         |
+| `src/browse.html`                | Video archive browser             |
+| `src/quotes.html`                | Quotes collection                 |
+| `src/js/main.js`                 | Core JS, YouTube API              |
+| `src/js/browse.js`               | Filter/sort logic                 |
 
-    U->>B: Navigate to page
-    B->>J: DOMContentLoaded
-    J->>D: Fetch content_database.json
-    D-->>J: Return videos/quotes/timeline
-    J->>B: Render content cards
-    J->>Y: Load thumbnails
-    U->>B: Click play button
-    J->>Y: Initialise player
-    Y-->>B: Stream video
-```
+---
 
-## Technology Stack
+## Project Overview
 
-| Category  | Technology                              |
-| --------- | --------------------------------------- |
-| Markup    | HTML5 (Semantic)                        |
-| Styling   | CSS3 (Custom Properties, Flexbox, Grid) |
-| Scripting | Vanilla JavaScript (ES6+)               |
-| Fonts     | SF Pro (Apple System Font Stack)        |
-| Video     | YouTube IFrame API                      |
-| Icons     | SVG Emoji Favicon                       |
+This static website features:
 
-## Getting Started
+- **77 curated quotes** with sources and years
+- **43 YouTube videos** (interviews, keynotes, product launches)
+- **12 timeline events** (1955-2011)
+- **15 content categories**
 
-### Prerequisites
+## Tech Stack
 
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Local web server (optional, for development)
+| Component | Technology                                         |
+| --------- | -------------------------------------------------- |
+| Frontend  | Vanilla HTML5, CSS3, ES6+ JavaScript               |
+| Hosting   | Cloudflare Pages (auto-deploy from GitHub)         |
+| DNS       | GoDaddy (www CNAME → steve-jobs-archive.pages.dev) |
+| Domain    | myeye.cloud                                        |
+| Theme     | Apple-inspired dark mode                           |
 
-### Quick Start
-
-1. **Clone or download the repository**
-
-   ```bash
-   git clone https://github.com/username/steve-jobs-archive.git
-   cd steve-jobs-archive
-   ```
-
-2. **Open directly in browser**
-
-   ```bash
-   open src/index.html
-   ```
-
-   Or use a local server for development:
-
-   ```bash
-   # Using Python
-   cd src && python3 -m http.server 8000
-
-   # Using Node.js
-   npx serve src
-
-   # Using PHP
-   php -S localhost:8000 -t src
-   ```
-
-3. **View the website**
-   Navigate to `http://localhost:8000` in your browser.
-
-## Project Structure
+## Directory Structure
 
 ```
 steve-jobs-archive/
-├── src/
+├── src/                          # DEPLOYED DIRECTORY
+│   ├── index.html                # Home (hero, timeline, featured)
+│   ├── browse.html               # Video browser with filters
+│   ├── quotes.html               # Quotes collection
 │   ├── css/
-│   │   └── styles.css           # Apple-inspired dark theme
+│   │   └── styles.css            # Apple dark theme
 │   ├── js/
-│   │   ├── main.js              # Core functionality & YouTube API
-│   │   ├── browse.js            # Filter/sort for browse page
-│   │   └── quotes.js            # Quotes page functionality
-│   ├── data/
-│   │   └── content_database.json # Videos, quotes, timeline data
-│   ├── assets/
-│   │   └── images/              # (Optional) Local images
-│   ├── index.html               # Home page
-│   ├── browse.html              # Browse archive page
-│   └── quotes.html              # Quotes collection page
+│   │   ├── main.js               # Core + YouTube API
+│   │   ├── browse.js             # Filter/sort/search
+│   │   └── quotes.js             # Quotes page
+│   └── data/
+│       └── content_database.json # *** ALL CONTENT HERE ***
 ├── docs/
-│   └── architecture/            # Technical documentation
-├── .gitignore
+│   └── architecture/
+│       └── ARCHITECTURE.md
+├── _headers                      # Cloudflare security headers
+├── _redirects                    # Cloudflare URL redirects
+├── wrangler.toml                 # Cloudflare Pages config
 └── README.md
 ```
 
-## Development
-
-### Adding New Content
-
-Edit `src/data/content_database.json` to add videos or quotes:
+## Content Database Schema
 
 ```json
 {
   "videos": [
     {
-      "id": "unique-id",
+      "id": "unique-slug",
       "title": "Video Title",
-      "youtube_id": "YOUTUBE_VIDEO_ID",
-      "category": "Interviews",
-      "description": "Brief description",
+      "youtube_id": "YouTube11Char",
+      "category": "Category Name",
+      "description": "Description text",
       "year": 2007,
-      "featured": false
+      "featured": true
     }
   ],
   "quotes": [
     {
       "id": "quote-id",
-      "quote": "The quote text here",
-      "source": "Source/Attribution",
+      "quote": "The quote text...",
+      "source": "Source, Year",
       "year": 2005,
-      "featured": false
+      "featured": true
     }
-  ]
+  ],
+  "timeline": [
+    {
+      "year": 1976,
+      "title": "Event Title",
+      "description": "What happened"
+    }
+  ],
+  "categories": ["Interviews", "Speeches", ...]
 }
 ```
 
-### Categories
+## Common Tasks
 
-Available video categories:
+### Add a Video
 
-- Interviews
-- Speeches
-- Product Launches
-- Keynotes
-- Early Career
-- Rare Footage
-- Business Philosophy
-- Design
-- Pixar
-- Documentaries
-- Q&A Sessions
-- Marketing
-- Entrepreneurship
+Edit `src/data/content_database.json`:
 
-### Customising Styles
+```json
+{
+  "id": "new-video",
+  "title": "Video Title",
+  "youtube_id": "dQw4w9WgXcQ",
+  "category": "Interviews",
+  "description": "Description",
+  "year": 2007
+}
+```
 
-CSS custom properties are defined in `src/css/styles.css`:
+### Add a Quote
+
+```json
+{
+  "id": "quote-78",
+  "quote": "The quote text.",
+  "source": "Stanford 2005",
+  "year": 2005
+}
+```
+
+### Modify Theme
+
+Edit CSS custom properties in `src/css/styles.css`:
 
 ```css
 :root {
-  --color-background: #000000;
-  --color-surface: #1d1d1f;
-  --color-accent: #0071e3;
+  --color-bg: #000000;
   --color-text-primary: #f5f5f7;
-  --color-text-secondary: #a1a1a6;
+  --color-accent: #2997ff;
 }
 ```
 
-## Deployment
+## Infrastructure Details
 
-### Static Hosting
+### DNS (GoDaddy)
 
-Deploy to any static hosting provider:
+- Domain: `myeye.cloud`
+- www CNAME: `steve-jobs-archive.pages.dev`
 
-**Vercel**
+### Cloudflare
 
-```bash
-vercel --prod
+- Account ID: `cd63df5d51174dd5a46564c13212c832`
+- Project: `steve-jobs-archive`
+- Build output: `src`
+- Build command: (none - static)
+
+### GitHub
+
+- Org: `loudfair`
+- Repo: `steve-jobs-archive`
+- Branch: `main`
+- Auto-deploy: **ENABLED**
+
+## Project History
+
+- **Created:** January 2026
+- **Merged from:** 4 source folders with Steve Jobs content
+- **Original issues:** Corrupted JSON files in source folders
+- **Quotes expanded:** 20 → 77 via web scraping
+- **Videos:** 43 unique YouTube videos
+
+## Security
+
+- No secrets in repository
+- No API keys required (static site)
+- Credentials managed externally (GoDaddy, Cloudflare)
+- Security headers in `_headers` file
+
+## Architecture Diagram
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    BROWSER                               │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐                 │
+│  │ index   │  │ browse  │  │ quotes  │                 │
+│  │ .html   │  │ .html   │  │ .html   │                 │
+│  └────┬────┘  └────┬────┘  └────┬────┘                 │
+│       │            │            │                       │
+│       └────────────┼────────────┘                       │
+│                    ▼                                    │
+│            ┌──────────────┐                             │
+│            │ styles.css   │                             │
+│            └──────────────┘                             │
+│                    │                                    │
+│       ┌────────────┼────────────┐                       │
+│       ▼            ▼            ▼                       │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐                 │
+│  │ main.js │  │browse.js│  │quotes.js│                 │
+│  └────┬────┘  └────┬────┘  └────┬────┘                 │
+│       │            │            │                       │
+│       └────────────┼────────────┘                       │
+│                    ▼                                    │
+│         ┌───────────────────┐                           │
+│         │content_database   │                           │
+│         │     .json         │                           │
+│         └─────────┬─────────┘                           │
+└───────────────────┼─────────────────────────────────────┘
+                    │
+                    ▼
+          ┌─────────────────┐
+          │   YouTube API   │
+          │  (thumbnails +  │
+          │    playback)    │
+          └─────────────────┘
 ```
 
-**Netlify**
+## Data Flow
 
-```bash
-netlify deploy --prod --dir=src
 ```
-
-**GitHub Pages**
-
-1. Push to GitHub
-2. Settings > Pages > Source: main branch, /src folder
-
-**AWS S3**
-
-```bash
-aws s3 sync src/ s3://your-bucket-name --acl public-read
+User visits page
+       │
+       ▼
+DOMContentLoaded fires
+       │
+       ▼
+Fetch content_database.json
+       │
+       ▼
+Render cards/quotes/timeline
+       │
+       ▼
+User clicks video play
+       │
+       ▼
+YouTube IFrame API loads
+       │
+       ▼
+Video streams from YouTube
 ```
-
-### Performance Optimisation
-
-For production, consider:
-
-- Minifying CSS/JS files
-- Compressing images
-- Enabling gzip compression on server
-- Adding a CDN for global distribution
-
-## Browser Support
-
-| Browser | Version |
-| ------- | ------- |
-| Chrome  | 80+     |
-| Firefox | 75+     |
-| Safari  | 13+     |
-| Edge    | 80+     |
-
-## Content Sources
-
-All video content is sourced from publicly available archives:
-
-- YouTube (interviews, keynotes, speeches)
-- Archive.org (historical footage)
-
-Quotes are sourced from:
-
-- Stanford Commencement Speech (2005)
-- WWDC presentations
-- Published interviews and biographies
-
-## Legal Notice
-
-This is a fan-made archive for educational purposes. Not affiliated with Apple Inc. All trademarks belong to their respective owners. Video content remains the property of original creators and is embedded via YouTube's official embed API.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-content`)
-3. Commit changes (`git commit -m 'Add new interview'`)
-4. Push to branch (`git push origin feature/new-content`)
-5. Open a Pull Request
-
-## Licence
-
-MIT Licence - See [LICENCE](./LICENCE) for details.
 
 ---
 
 _"The people who are crazy enough to think they can change the world are the ones who do."_
+
+**Last Updated:** January 2026
