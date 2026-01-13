@@ -27,10 +27,16 @@
   /* Gradient Colours */
   --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --gradient-quote: linear-gradient(90deg, #ffb6ff, #b344ff);
-  --gradient-hero: radial-gradient(ellipse at top center, rgba(102, 126, 234, 0.15) 0%, transparent 60%);
+  --gradient-hero: radial-gradient(
+    ellipse at top center,
+    rgba(102, 126, 234, 0.15) 0%,
+    transparent 60%
+  );
 
   /* Typography */
-  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -72,7 +78,9 @@
 /* ============================================
    Reset & Base Styles
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -98,7 +106,12 @@ body {
 /* ============================================
    Typography
    ============================================ */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--font-weight-semibold);
   letter-spacing: -0.025em;
   line-height: 1.1;
@@ -187,7 +200,9 @@ a:hover {
   font-weight: var(--font-weight-regular);
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-sm);
-  transition: color var(--transition-fast), background-color var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
 }
 
 .nav-link:hover {
@@ -215,14 +230,18 @@ a:hover {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 200%;
   height: 100%;
-  background: radial-gradient(ellipse at center top, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+  background: radial-gradient(
+    ellipse at center top,
+    rgba(102, 126, 234, 0.1) 0%,
+    transparent 50%
+  );
   pointer-events: none;
 }
 
@@ -259,9 +278,19 @@ a:hover {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-  40% { transform: translateX(-50%) translateY(-10px); }
-  60% { transform: translateX(-50%) translateY(-5px); }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
 }
 
 /* ============================================
@@ -337,7 +366,9 @@ a:hover {
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .card:hover {
@@ -382,7 +413,7 @@ a:hover {
 }
 
 .play-button::after {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
@@ -510,13 +541,19 @@ a:hover {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent 0%, var(--color-border) 5%, var(--color-border) 95%, transparent 100%);
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--color-border) 5%,
+    var(--color-border) 95%,
+    transparent 100%
+  );
 }
 
 .timeline-item {
@@ -529,7 +566,7 @@ a:hover {
 }
 
 .timeline-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -537,7 +574,9 @@ a:hover {
   height: 12px;
   background-color: var(--color-accent);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--color-background), 0 0 0 6px var(--color-accent);
+  box-shadow:
+    0 0 0 4px var(--color-background),
+    0 0 0 6px var(--color-accent);
 }
 
 .timeline-year {
@@ -590,7 +629,9 @@ a:hover {
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .animate-on-scroll.is-visible {
@@ -599,12 +640,24 @@ a:hover {
 }
 
 /* Stagger animation for grid items */
-.grid .animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.grid .animate-on-scroll:nth-child(2) { transition-delay: 100ms; }
-.grid .animate-on-scroll:nth-child(3) { transition-delay: 200ms; }
-.grid .animate-on-scroll:nth-child(4) { transition-delay: 300ms; }
-.grid .animate-on-scroll:nth-child(5) { transition-delay: 400ms; }
-.grid .animate-on-scroll:nth-child(6) { transition-delay: 500ms; }
+.grid .animate-on-scroll:nth-child(1) {
+  transition-delay: 0ms;
+}
+.grid .animate-on-scroll:nth-child(2) {
+  transition-delay: 100ms;
+}
+.grid .animate-on-scroll:nth-child(3) {
+  transition-delay: 200ms;
+}
+.grid .animate-on-scroll:nth-child(4) {
+  transition-delay: 300ms;
+}
+.grid .animate-on-scroll:nth-child(5) {
+  transition-delay: 400ms;
+}
+.grid .animate-on-scroll:nth-child(6) {
+  transition-delay: 500ms;
+}
 
 /* ============================================
    Loading & Empty States
@@ -618,7 +671,7 @@ a:hover {
 }
 
 .loading::before {
-  content: '';
+  content: "";
   display: block;
   width: 40px;
   height: 40px;
@@ -630,7 +683,9 @@ a:hover {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ============================================

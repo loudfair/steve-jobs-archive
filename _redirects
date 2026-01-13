@@ -1,0 +1,9 @@
+# Cloudflare Pages Redirects
+# Handle SPA-style routing and legacy URLs
+
+# Root to index
+/home    /index.html    301
+
+# Clean URLs
+/archive    /browse.html    301
+/videos     /browse.html    301

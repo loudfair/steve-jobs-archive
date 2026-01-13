@@ -133,41 +133,47 @@ src/
 ## Key Features
 
 ### 1. Content Database
+
 Single JSON file containing:
+
 - 40+ video entries with YouTube IDs
 - 20+ curated quotes with sources
 - 12 timeline events
 - Category definitions
 
 ### 2. Filter System
+
 - Category-based filtering (Interviews, Speeches, etc.)
 - Sort options (date, title)
 - Real-time count updates
 
 ### 3. YouTube Integration
+
 - YouTube IFrame API for embedded playback
 - Fallback to direct iframe if API fails
 - Lazy loading of thumbnails
 
 ### 4. Responsive Design
+
 - Mobile-first approach
 - CSS Grid and Flexbox layouts
 - Breakpoints: 480px, 768px, 1024px
 
 ### 5. Animations
+
 - Intersection Observer for scroll animations
 - Staggered card animations
 - Smooth transitions
 
 ## Performance Considerations
 
-| Aspect | Implementation |
-|--------|----------------|
-| Loading | Lazy load images, defer non-critical JS |
+| Aspect    | Implementation                              |
+| --------- | ------------------------------------------- |
+| Loading   | Lazy load images, defer non-critical JS     |
 | Rendering | CSS transitions, GPU-accelerated animations |
-| Data | Single JSON fetch, cached in memory |
-| Images | YouTube CDN thumbnails, SVG fallbacks |
-| Fonts | System font stack (no external fonts) |
+| Data      | Single JSON fetch, cached in memory         |
+| Images    | YouTube CDN thumbnails, SVG fallbacks       |
+| Fonts     | System font stack (no external fonts)       |
 
 ## Security
 

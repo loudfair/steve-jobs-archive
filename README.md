@@ -64,14 +64,14 @@ sequenceDiagram
 
 ## Technology Stack
 
-| Category | Technology |
-|----------|------------|
-| Markup | HTML5 (Semantic) |
-| Styling | CSS3 (Custom Properties, Flexbox, Grid) |
-| Scripting | Vanilla JavaScript (ES6+) |
-| Fonts | SF Pro (Apple System Font Stack) |
-| Video | YouTube IFrame API |
-| Icons | SVG Emoji Favicon |
+| Category  | Technology                              |
+| --------- | --------------------------------------- |
+| Markup    | HTML5 (Semantic)                        |
+| Styling   | CSS3 (Custom Properties, Flexbox, Grid) |
+| Scripting | Vanilla JavaScript (ES6+)               |
+| Fonts     | SF Pro (Apple System Font Stack)        |
+| Video     | YouTube IFrame API                      |
+| Icons     | SVG Emoji Favicon                       |
 
 ## Getting Started
 
@@ -83,17 +83,20 @@ sequenceDiagram
 ### Quick Start
 
 1. **Clone or download the repository**
+
    ```bash
    git clone https://github.com/username/steve-jobs-archive.git
    cd steve-jobs-archive
    ```
 
 2. **Open directly in browser**
+
    ```bash
    open src/index.html
    ```
 
    Or use a local server for development:
+
    ```bash
    # Using Python
    cd src && python3 -m http.server 8000
@@ -166,6 +169,7 @@ Edit `src/data/content_database.json` to add videos or quotes:
 ### Categories
 
 Available video categories:
+
 - Interviews
 - Speeches
 - Product Launches
@@ -201,20 +205,24 @@ CSS custom properties are defined in `src/css/styles.css`:
 Deploy to any static hosting provider:
 
 **Vercel**
+
 ```bash
 vercel --prod
 ```
 
 **Netlify**
+
 ```bash
 netlify deploy --prod --dir=src
 ```
 
 **GitHub Pages**
+
 1. Push to GitHub
 2. Settings > Pages > Source: main branch, /src folder
 
 **AWS S3**
+
 ```bash
 aws s3 sync src/ s3://your-bucket-name --acl public-read
 ```
@@ -222,6 +230,7 @@ aws s3 sync src/ s3://your-bucket-name --acl public-read
 ### Performance Optimisation
 
 For production, consider:
+
 - Minifying CSS/JS files
 - Compressing images
 - Enabling gzip compression on server
@@ -230,19 +239,21 @@ For production, consider:
 ## Browser Support
 
 | Browser | Version |
-|---------|---------|
-| Chrome | 80+ |
-| Firefox | 75+ |
-| Safari | 13+ |
-| Edge | 80+ |
+| ------- | ------- |
+| Chrome  | 80+     |
+| Firefox | 75+     |
+| Safari  | 13+     |
+| Edge    | 80+     |
 
 ## Content Sources
 
 All video content is sourced from publicly available archives:
+
 - YouTube (interviews, keynotes, speeches)
 - Archive.org (historical footage)
 
 Quotes are sourced from:
+
 - Stanford Commencement Speech (2005)
 - WWDC presentations
 - Published interviews and biographies
@@ -265,4 +276,4 @@ MIT Licence - See [LICENCE](./LICENCE) for details.
 
 ---
 
-*"The people who are crazy enough to think they can change the world are the ones who do."*
+_"The people who are crazy enough to think they can change the world are the ones who do."_
